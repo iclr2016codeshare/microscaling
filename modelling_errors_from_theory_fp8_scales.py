@@ -12,10 +12,11 @@ import numpy as np
 # Customization parameters
 BLOCK_SIZES = [2, 4, 8, 16, 32, 64, 128, 256]
 MAX_INTEGRATION_POINTS = 100
+NUM_SIGMAS = 50
 # ============================================
 
 # Range of standard deviation sigma to model
-sigmas = np.linspace(0.001, 0.050, 50)
+sigmas = np.linspace(0.001, 0.050, NUM_SIGMAS)
 sigmas = np.insert(sigmas, 0, 0.0001)
 
 # Quantization level and Voronoi bin edges for FP4 E2M1 (elements quantization)
