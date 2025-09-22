@@ -19,7 +19,7 @@ from mx.elemwise_ops import quantize_elemwise_op
 DEFAULT_DTYPE = torch.bfloat16
 SEED = 83013
 BLOCK_SIZES = [2, 4] #, 8, 16, 32, 64, 128, 256]
-SCALE_MODE = 143  # 143: UE4M3; 153: UE5M3; 999: BF16
+SCALE_MODE = 143  # 143: UE4M3; 53: UE5M3; 16: BF16
 NUM_SIGMAS = 50
 SAMPLE_ROWS = 1024
 SAMPLE_COLS = 1024
